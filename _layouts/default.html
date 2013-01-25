@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>{% if page.title %} {{ page.title }} | {% endif %}Stephen Simpson</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/jekyll/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<meta name="google-site-verification" content="usd7HB3Q_1CqgG3j_A7ExrJS8PKuxzwOdBQqzMhZknc" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2816846-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 
+'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; 
+s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+
+	<div id="logo">
+		<h1><a href="/">Stephen Simpson</a></h1>
+		<p><em>My Personal Site</em></p>
+	
+		<div id="twitter">
+			
+		</div>
+	</div>
+
+	<hr />
+	<!-- end #logo -->
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li {% if page.title == 'Home' %}class="current_page_item"{% endif %}><a href="/jekyll" class="first">Home</a></li>
+				<li {% if page.title == 'Certifications' %}class="current_page_item"{% endif %}><a href="certifications.html">Certifications</a></li>
+				<li {% if page.title == 'Resume' %}class="current_page_item"{% endif %}><a href="resume.html">Resume</a></li>
+				<!--<li><a href="links.html">Links</a></li>-->
+				<li {% if page.title == 'Contact Us' %}class="current_page_item"{% endif %}><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<!-- end #menu -->
+		<!-- end #search -->
+	</div>
+	<!-- end #header -->
+	<!-- end #header-wrapper -->
+	<div id="page">
+		<div id="content2">	
+		{{content}}
+		</div>
+	<!-- end #content -->
+	
+	<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+	<div id="footer">
+	<p>Copyright (c) 2010 Stephen Simpson. All rights reserved.</p>
+	</div>
+	<!-- end #footer --i>
+</body>
+</html>
