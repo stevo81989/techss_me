@@ -5,7 +5,7 @@
 <title>{% if page.title %} {{ page.title }} | {% endif %}Stephen Simpson</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="/jekyll/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" media="screen" />
 <meta name="google-site-verification" content="usd7HB3Q_1CqgG3j_A7ExrJS8PKuxzwOdBQqzMhZknc" />
 
 <script type="text/javascript">
@@ -30,7 +30,7 @@ s.parentNode.insertBefore(ga, s);
 
 
 	<div id="logo">
-		<h1><a href="/">Stephen Simpson</a></h1>
+		<h1><a href="{{ site.url }}/">Stephen Simpson</a></h1>
 		<p><em>My Personal Site</em></p>
 	
 		<div id="twitter">
@@ -43,11 +43,11 @@ s.parentNode.insertBefore(ga, s);
 	<div id="header">
 		<div id="menu">
 			<ul>
-				<li {% if page.title == 'Home' %}class="current_page_item"{% endif %}><a href="/jekyll" class="first">Home</a></li>
-				<li {% if page.title == 'Certifications' %}class="current_page_item"{% endif %}><a href="certifications.html">Certifications</a></li>
-				<li {% if page.title == 'Resume' %}class="current_page_item"{% endif %}><a href="resume.html">Resume</a></li>
+				<li {% if page.title == 'Home' %}class="current_page_item"{% endif %}><a href="{{ site.url }}/" class="first">Home</a></li>
+				<li {% if page.title == 'Certifications' %}class="current_page_item"{% endif %}><a href="{{ site.url }}/certifications.html">Certifications</a></li>
+				<li {% if page.title == 'Resume' %}class="current_page_item"{% endif %}><a href="{{ site.url }}/resume.html">Resume</a></li>
 				<!--<li><a href="links.html">Links</a></li>-->
-				<li {% if page.title == 'Contact Us' %}class="current_page_item"{% endif %}><a href="contact.html">Contact</a></li>
+				<li {% if page.title == 'Contact Us' %}class="current_page_item"{% endif %}><a href="{{ site.url }}/contact.html">Contact</a></li>
 			</ul>
 		</div>
 		<!-- end #menu -->
